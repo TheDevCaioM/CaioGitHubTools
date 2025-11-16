@@ -1,0 +1,892 @@
+/* ===========================================================
+   ✨ Tema modernizado
+   =========================================================== */
+:root {
+  --bg: #0d1117;
+  --bg-gradient: radial-gradient(circle at 20% 20%, #162036, #0a0f1c 80%);
+  --card: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-hover-border: rgba(255, 255, 255, 0.18);
+  --muted: #94a3b8;
+  --accent: #7c3aed;
+  --accent-hover: #9d5bff;
+  --text: #f1f5f9;
+  --border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(12px);
+}
+
+/* ===========================================================
+   🌐 NAVBAR
+=========================================================== */
+.navbar {
+  width: 100%;
+  padding: 16px 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* LINKS DA NAVBAR */
+.nav-right a {
+  margin-left: 26px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: .25s;
+}
+
+/* HOVER */
+.nav-right a:hover {
+  color: #fff;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ===========================================================
+   🔥 GUIA ATIVA
+=========================================================== */
+.nav-right a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(124, 58, 237, 0.5);
+}
+
+
+
+/* ===========================================================
+   🟣 HERO SECTION
+   =========================================================== */
+.hero {
+  margin: 80px auto;
+  text-align: center;
+  max-width: 700px;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+.hero h1 span {
+  color: var(--accent);
+}
+.hero p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  opacity: .8;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ================================
+   RESET SUAVE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0f0b17;
+  color: #fff;
+  padding: 20px;
+}
+
+/* ================================
+   NAVBAR (mesmo estilo do site)
+================================ */
+.navbar {
+  width: 100%;
+  background: #181124;
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  border: 1px solid #2c1f45;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #b084ff;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #d6caff;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #c29fff;
+}
+
+/* ================================
+   HEADER DA PÁGINA
+================================ */
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  color: #c29fff;
+  font-weight: 700;
+}
+
+.page-header p {
+  margin-top: 10px;
+  color: #bfb3d6;
+}
+
+
+/* ================================
+   GRID DE TEMPLATES
+================================ */
+.templates-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 30px;
+}
+
+/* ================================
+   CARDS
+================================ */
+.template-card {
+  background: #181124;
+  border-radius: 14px;
+  padding: 25px;
+  border: 1px solid #261a3b;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.template-card:hover {
+  transform: translateY(-6px);
+  border-color: #8f5dff;
+  box-shadow: 0px 0px 15px #3c216880;
+}
+
+.template-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 12px;
+  color: #b084ff; /* ícones roxos bonitos */
+}
+
+.template-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #e8dbff;
+}
+
+.template-card p {
+  color: #b8abc9;
+  font-size: 0.95rem;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar .nav-right a {
+    margin: 0 10px;
+  }
+}
+
+.generated-section {
+  margin: 40px auto;
+  max-width: 900px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.generated-section h2 {
+  margin-bottom: 20px;
+}
+
+#template-output {
+  display: block;
+  padding: 15px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  color: #fff;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#copy-template {
+  margin-top: 18px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#copy-template:hover {
+  opacity: 0.8;
+}
+
+
+/* ===========================================================
+   ⭐ FEATURES
+   =========================================================== */
+.features {
+  margin: 100px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  transition: .25s;
+}
+.feature-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+
+/* ===========================================================
+   🌌 Base geral
+   =========================================================== */
+body {
+  font-family: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text);
+  margin: 0;
+  padding: 32px 20px;
+  line-height: 1.6;
+  overflow-x: hidden;
+
+  /* movimento sutil */
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================================================
+   🌐 Navbar estilizada e alinhada
+   =========================================================== */
+.navbar {
+  width: 100%;
+  padding: 16px 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;       /* 🔥 Centraliza tudo horizontalmente */
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Container interno para limitar largura e alinhar conteúdo */
+.nav-content {
+  width: 100%;
+  max-width: 1200px;             /* 🔥 Mantém alinhado ao layout principal */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------------- LOGO ---------------- */
+.nav-left .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  text-shadow: 0 0 6px rgba(124, 58, 237, 0.5);
+}
+
+/* ---------------- LINKS ---------------- */
+.nav-right a {
+  margin-left: 26px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+/* Hover elegante */
+.nav-right a:hover {
+  color: #fff;
+  border-color: var(--accent);
+  text-shadow: 0 0 8px var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Animação sutil */
+.nav-right a {
+  position: relative;
+}
+
+/* ---------------- RESPONSIVO ---------------- */
+@media (max-width: 700px) {
+  .nav-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-right a {
+    margin-left: 14px;
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+  }
+}
+
+
+
+/* ===========================================================
+   🧭 Container
+   =========================================================== */
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* ===========================================================
+   🪶 Header
+   =========================================================== */
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+
+  /* brilho suave */
+  text-shadow: 0 0 12px rgba(124, 58, 237, 0.25);
+}
+
+header p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ===========================================================
+   🪄 Card com glassmorphism
+   =========================================================== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 24px;
+  backdrop-filter: var(--glass-blur);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  border-color: var(--card-hover-border);
+  transform: translateY(-3px);
+}
+
+/* ===========================================================
+   🧩 Layout do formulário
+   =========================================================== */
+form {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 26px;
+}
+
+/* Column styles */
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===========================================================
+   📦 Campos
+   =========================================================== */
+input,
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: var(--text);
+  font-size: 0.94rem;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3);
+  background: rgba(124, 58, 237, 0.07);
+}
+
+/* ===========================================================
+   🖋 Pré-visualização
+   =========================================================== */
+pre {
+  background: #0b1223;
+  border-radius: 12px;
+  padding: 16px;
+  overflow: auto;
+  max-height: 540px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.92rem;
+  border: 1px solid var(--border);
+  white-space: pre-wrap;
+
+  transition: 0.3s ease;
+}
+
+pre:hover {
+  border-color: var(--accent);
+}
+
+/* ================================
+   SELECT DE LICENÇA – FIX VISUAL
+================================ */
+.license-box select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+
+  background: rgba(0, 0, 0, 0.35); /* 🔥 fundo mais escuro */
+  color: #fff; /* 🔥 texto totalmente visível */
+  
+  font-size: 0.95rem;
+  appearance: none;
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.license-box select:hover {
+  border-color: var(--accent);
+  background: rgba(124, 58, 237, 0.15); /* leve brilho roxo no hover */
+}
+
+.license-box select option {
+  background: #0d0a17; /* 🔥 fundo do dropdown */
+  color: #fff;         /* letras brancas */
+  padding: 12px;
+}
+
+/* ================================
+   SELECT (READMe)
+================================ */
+#licenseSelect {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 0.95rem;
+
+  appearance: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+
+  /* seta customizada */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' width='16' height='16' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+#licenseSelect:hover {
+  border-color: var(--accent);
+  background: rgba(124, 58, 237, 0.18);
+}
+
+#licenseSelect option {
+  background: #0d0a17;
+  color: #fff;
+  padding: 10px;
+}
+
+/* ================================
+   SELECT DE LICENÇA — 100% FUNCIONANDO
+================================ */
+#licenseType {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+
+  background: rgba(0, 0, 0, 0.45); /* fundo escuro */
+  color: #fff; /* texto branco */
+  font-size: 0.95rem;
+
+  appearance: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+#licenseType:hover {
+  border-color: var(--accent);
+  background: rgba(124, 58, 237, 0.18);
+}
+
+#licenseType option {
+  background: #0d0a17;
+  color: #fff;
+  padding: 10px;
+}
+
+/* ===========================================================
+   ⚙️ Botões
+   =========================================================== */
+button {
+  background: var(--accent);
+  border: 0;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+button.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* ===========================================================
+   🧩 Grid dos templates
+   =========================================================== */
+.tags {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* ===========================================================
+   🏷️ Tags / templates
+   =========================================================== */
+.tag {
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+/* Hover */
+.tag:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.45);
+}
+
+/* Ativo */
+.tag.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+  transform: translateY(-2px);
+}
+
+
+/* ============================
+          🌙 FOOTER (PREMIUM)
+============================= */
+.main-footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 60px 20px 30px;
+  margin-top: 80px;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito Glow Suave no topo */
+.main-footer::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  opacity: 0.7;
+  filter: blur(4px);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 50px;
+}
+
+/* Títulos mais bonitos */
+.footer-section h3,
+.footer-section h4 {
+  color: var(--accent);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+  transition: 0.3s;
+}
+
+.footer-section h3:hover,
+.footer-section h4:hover {
+  transform: translateX(4px);
+}
+
+/* Texto */
+.footer-section p {
+  color: #d0d0d0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Lista */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: 0.25s;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent);
+  opacity: 1;
+  transform: translateX(6px);
+}
+
+/* SOCIAL ICONS PREMIUM */
+.footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.social-link {
+  color: #cfcfcf;
+  transition: 0.25s ease;
+  opacity: 0.8;
+}
+
+.social-link svg {
+  transition: 0.25s ease;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.social-link:hover svg {
+  filter: drop-shadow(0 0 6px var(--accent));
+}
+
+/* BASE LINE */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  color: #bdbdbd;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+/* Animação sutil quando passa o mouse */
+.footer-bottom:hover {
+  opacity: 1;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between; /* deixa os 3 itens alinhados */
+  align-items: flex-start; /* mantém os títulos alinhados no topo */
+  gap: 40px;
+
+  flex-wrap: wrap; /* garante responsividade */
+  text-align: left;
+}
+
+
+
+/* ===========================================================
+   📱 Responsividade
+   =========================================================== */
+@media (max-width: 900px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 18px 12px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
